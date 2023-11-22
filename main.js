@@ -63,10 +63,6 @@ inputElements.forEach((element) =>{
             displayMeter.value = meter.toFixed(2)
             displayCentimeter.value = centimeter.toFixed(2)
             displayInch.value = inch.toFixed(2)
-
-            console.log(meter)
-            console.log(centimeter)
-            console.log(inch)
             break; 
         }
         
