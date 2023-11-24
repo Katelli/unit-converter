@@ -13,7 +13,7 @@ inputElements.forEach((element) =>{
             console.log("changed input meter")
             let meter = Number(event.target.value)
             // Converter fra meter
-            kilometer = convertMeterToKilometer(meter);
+            millimeter = convertMeterToMillimeter(meter);
             decimeter = convertMeterToDecimeter(meter);
             centimeter = convertMeterToCentimeter(meter);
             inch = convertMeterToInch(meter);
@@ -23,22 +23,22 @@ inputElements.forEach((element) =>{
             let displayCentimeter = document.querySelector("#input-centimeter")
             let displayInch = document.querySelector("#input-inch")
             let displayFeet = document.querySelector("#input-feet")
-            let displayKilometer = document.querySelector("#input-kilometer")
+            let displayMillimeter = document.querySelector("#input-millimeter")
             let displayDecimeter = document.querySelector("#input-decimeter")
 
-            displayKilometer.value = kilometer.toFixed(3)
-            displayDecimeter.value = decimeter.toFixed(3)
-            displayCentimeter.value = centimeter.toFixed(3)
-            displayInch.value = inch.toFixed(3)
-            displayFeet.value = feet.toFixed(3)           
+            displayMillimeter.value = millimeter.toFixed(2)
+            displayDecimeter.value = decimeter.toFixed(2)
+            displayCentimeter.value = centimeter.toFixed(2)
+            displayInch.value = inch.toFixed(2)
+            displayFeet.value = feet.toFixed(2)           
             break; 
         }
 
-        case "input-kilometer": {
-            console.log("changed input kilometer")
-            let kilometer = Number(event.target.value)
+        case "input-millimeter": {
+            console.log("changed input millimeter")
+            let millimeter = Number(event.target.value)
             // Converter fra meter
-            meter = convertKilometerToMeter(kilometer);
+            meter = convertMillimeterToMeter(millimeter);
             decimeter = convertMeterToDecimeter(meter);
             centimeter = convertMeterToCentimeter(meter);
             inch = convertMeterToInch(meter);
@@ -51,11 +51,11 @@ inputElements.forEach((element) =>{
             let displayMeter = document.querySelector("#input-meter")
             let displayDecimeter = document.querySelector("#input-decimeter")
 
-            displayMeter.value = meter.toFixed(3)
-            displayDecimeter.value = decimeter.toFixed(3)
-            displayCentimeter.value = centimeter.toFixed(3)
-            displayInch.value = inch.toFixed(3)
-            displayFeet.value = feet.toFixed(3)           
+            displayMeter.value = meter.toFixed(2)
+            displayDecimeter.value = decimeter.toFixed(2)
+            displayCentimeter.value = centimeter.toFixed(2)
+            displayInch.value = inch.toFixed(2)
+            displayFeet.value = feet.toFixed(2)           
             break; 
         }
 
@@ -64,7 +64,7 @@ inputElements.forEach((element) =>{
             let decimeter = Number(event.target.value)
             // Converter fra meter
             meter = convertDecimeterToMeter(decimeter);
-            kilometer = convertMeterToKilometer(meter);
+            millimeter = convertMeterToMillimeter(meter);
             centimeter = convertMeterToCentimeter(meter);
             inch = convertMeterToInch(meter);
             feet = convertMeterToFeet(meter);
@@ -73,14 +73,14 @@ inputElements.forEach((element) =>{
             let displayMeter = document.querySelector("#input-meter")
             let displayInch = document.querySelector("#input-inch")
             let displayFeet = document.querySelector("#input-feet")
-            let displayKilometer = document.querySelector("#input-kilometer")
-            let displayCentimeter = document.querySelector("#input-decimeter")
+            let displayMillimeter = document.querySelector("#input-millimeter")
+            let displayCentimeter = document.querySelector("#input-centimeter")
 
-            displayKilometer.value = kilometer.toFixed(3)
-            displayMeter.value = meter.toFixed(3)
-            displayCentimeter.value = centimeter.toFixed(3)
-            displayInch.value = inch.toFixed(3)
-            displayFeet.value = feet.toFixed(3)           
+            displayMillimeter.value = millimeter.toFixed(2)
+            displayMeter.value = meter.toFixed(2)
+            displayCentimeter.value = centimeter.toFixed(2)
+            displayInch.value = inch.toFixed(2)
+            displayFeet.value = feet.toFixed(2)           
             break; 
         }
 
@@ -88,9 +88,9 @@ inputElements.forEach((element) =>{
             console.log("changed input centimeter")
             let centimeter = Number(event.target.value)
             // Converter fra centimeter
-            kilometer = convertMeterToKilometer(meter);
-            decimeter = convertMeterToDecimeter(meter);
             meter = convertCentimeterToMeter(centimeter);
+            millimeter = convertMeterToMillimeter(meter);
+            decimeter = convertMeterToDecimeter(meter);
             inch = convertMeterToInch(meter);
             feet = convertMeterToFeet(meter);
 
@@ -98,14 +98,14 @@ inputElements.forEach((element) =>{
             let displayMeter = document.querySelector("#input-meter")
             let displayInch = document.querySelector("#input-inch")
             let displayFeet = document.querySelector("#input-feet")
-            let displayKilometer = document.querySelector("#input-kilometer")
+            let displayMillimeter = document.querySelector("#input-millimeter")
             let displayDecimeter = document.querySelector("#input-decimeter")
 
-            displayKilometer.value = kilometer.toFixed(3)
-            displayDecimeter.value = decimeter.toFixed(3)
-            displayMeter.value = meter.toFixed(3)            
-            displayInch.value = inch.toFixed(3)
-            displayFeet.value = feet.toFixed(3)
+            displayMillimeter.value = millimeter.toFixed(2)
+            displayDecimeter.value = decimeter.toFixed(2)
+            displayMeter.value = meter.toFixed(2)            
+            displayInch.value = inch.toFixed(2)
+            displayFeet.value = feet.toFixed(2)
             break; 
         }
 
@@ -113,9 +113,9 @@ inputElements.forEach((element) =>{
             console.log("changed input feet")
             let feet = Number(event.target.value)
             // Converter til føtter
-            kilometer = convertMeterToKilometer(meter);
-            decimeter = convertMeterToDecimeter(meter);
             meter = convertFeetToMeter(feet);
+            millimeter = convertMeterToMillimeter(meter);
+            decimeter = convertMeterToDecimeter(meter);
             centimeter = convertMeterToCentimeter(meter);
             inch = convertMeterToInch(meter);
 
@@ -123,14 +123,14 @@ inputElements.forEach((element) =>{
             let displayMeter = document.querySelector("#input-meter")
             let displayCentimeter = document.querySelector("#input-centimeter")
             let displayInch = document.querySelector("#input-inch")
-            let displayKilometer = document.querySelector("#input-kilometer")
+            let displayMillimeter = document.querySelector("#input-millimeter")
             let displayDecimeter = document.querySelector("#input-decimeter")
 
-            displayKilometer.value = kilometer.toFixed(3)
-            displayDecimeter.value = decimeter.toFixed(3)
-            displayMeter.value = meter.toFixed(3)
-            displayCentimeter.value = centimeter.toFixed(3)
-            displayInch.value = inch.toFixed(3)
+            displayMillimeter.value = millimeter.toFixed(2)
+            displayDecimeter.value = decimeter.toFixed(2)
+            displayMeter.value = meter.toFixed(2)
+            displayCentimeter.value = centimeter.toFixed(2)
+            displayInch.value = inch.toFixed(2)
             break; 
         }
         
@@ -138,9 +138,9 @@ inputElements.forEach((element) =>{
             console.log("changed input inch")
             let inch = Number(event.target.value)
             // Converter til inch
-            kilometer = convertMeterToKilometer(meter);
-            decimeter = convertMeterToDecimeter(meter);
             meter = convertInchToMeter(inch);
+            millimeter = convertMeterToMillimeter(meter);
+            decimeter = convertMeterToDecimeter(meter);
             centimeter = convertMeterToCentimeter(meter);
             feet = convertMeterToFeet(meter);
 
@@ -148,14 +148,14 @@ inputElements.forEach((element) =>{
             let displayMeter = document.querySelector("#input-meter")
             let displayCentimeter = document.querySelector("#input-centimeter")
             let displayFeet = document.querySelector("#input-feet")
-            let displayKilometer = document.querySelector("#input-kilometer")
+            let displayMillimeter = document.querySelector("#input-millimeter")
             let displayDecimeter = document.querySelector("#input-decimeter")
 
-            displayKilometer.value = kilometer.toFixed(3)
-            displayDecimeter.value = decimeter.toFixed(3)
-            displayMeter.value = meter.toFixed(3)
-            displayCentimeter.value = centimeter.toFixed(3)
-            displayFeet.value = feet.toFixed(3)
+            displayMillimeter.value = millimeter.toFixed(2)
+            displayDecimeter.value = decimeter.toFixed(2)
+            displayMeter.value = meter.toFixed(2)
+            displayCentimeter.value = centimeter.toFixed(2)
+            displayFeet.value = feet.toFixed(2)
             break; 
         }
     }
@@ -176,14 +176,14 @@ function convertFeetToMeter(feet) {
     return meter
 }
 
-function convertMeterToKilometer(meter) {
-    let kilometer = meter / 1000
+function convertMeterToMillimeter(meter) {
+    let millimeter = meter * 1000
     
-    return kilometer
+    return millimeter
 }
 
-function convertKilometerToMeter(kilometer) {
-    let meter = kilometer * 1000
+function convertMillimeterToMeter(millimeter) {
+    let meter = millimeter / 1000
 
     return meter
 }
