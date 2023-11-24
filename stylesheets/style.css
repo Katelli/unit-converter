@@ -1,8 +1,25 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: x-large;
+}
+
+h1{
+    font-size: xx-large;
+    background-color: skyblue;
+    padding: 1rem;
 }
 
 input{
     text-align: center;
+}
+
+div{
+    width: 50%;
+    padding-top: 1rem;
+}
+
+.calculator{
+    min-height: 100vh;
+    background-color: coral;
 }
