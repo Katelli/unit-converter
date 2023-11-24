@@ -89,6 +89,7 @@ inputElements.forEach((element) =>{
 })
 
 
+//Kalkulator
 function convertMeterToFeet(meter) {
     let feet = meter * 3.280839895
     
