@@ -15,11 +15,11 @@ input{
 }
 
 div{
-    width: 50%;
+    min-width: 50%;
     padding-top: 1rem;
 }
 
 .calculator{
     min-height: 100vh;
-    background-color: coral;
+    background-color: rgb(250, 145, 106);
 }
